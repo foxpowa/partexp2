@@ -2,7 +2,6 @@ version: '3.3'
 services:
   jupyter:
     image: jupyter/tensorflow-notebook
-    build: .
     volumes:
     - ./work:/home/jovyan/work
     command: bash -c "start-notebook.sh"
